@@ -28,6 +28,8 @@ document.addEventListener('scroll', function () {
 
 
 
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     const animatedBlocks = document.querySelectorAll('.animated-block');
 
