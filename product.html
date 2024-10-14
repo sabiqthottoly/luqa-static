@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUQA - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="Luqa Logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html" class="active">Product</a></li>
+                    <li><a href="#">Pricing Plans</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="login">Log In</a></li>
+                    <li><a href="#" class="get-started">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="product-page">
+        <section class="product-section">
+            <h2>Our CRM Product</h2>
+            <div class="product-details">
+                <p>Luqa CRM is a robust platform designed to streamline customer relationship management with
+                    cutting-edge tools and an intuitive interface.</p>
+                <h3>Key Features:</h3>
+                <ul class="product-features">
+                    <li>Lead Management - Organize and track leads efficiently.</li>
+                    <li>Sales Analytics - Get actionable insights from your sales data.</li>
+                    <li>Automation Tools - Automate repetitive tasks and workflows.</li>
+                    <li>Customizable Dashboards - Tailor the interface to your specific needs.</li>
+                    <li>Advanced Reporting - Generate comprehensive reports in just a few clicks.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Luqa</h2>
+                <p>Communicate. Collaborate. Create.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>500 Terry Francine Street, San Francisco, CA 94158</p>
+                <p>General Inquiries: 123-456-7890</p>
+                <p>Email: <a href="mailto:info@luqa.com">info@luqa.com</a></p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-follow">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="fb.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="linkdin.png" alt="LinkedIn" class="social-icon"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 by Luqa. Powered and secured by <a href="https://www.luqa.com">Luqa</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const productPage = document.getElementById('product-page');
+        productPage.style.animation = 'slideIn 1s ease forwards';
+    });
+</script>
+
+</html>

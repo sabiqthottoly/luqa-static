@@ -260,8 +260,8 @@ nav ul li a.get-started {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 100px;
-     padding: 50px 0;
     background-color: #f9f9f9; 
+    margin-bottom: 30px;
 }
 
 .creatives-section .illustration {
@@ -570,28 +570,6 @@ footer {
     text-decoration: none;
 }
 
-/* Add media queries for responsive adjustments */
-@media (max-width: 768px) {
-    .logo{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar {
-        align-items: center;
-    }
-
-    nav ul {
-        padding: 20px;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
 
 .animated-block {
     opacity: 0;
@@ -660,3 +638,77 @@ footer {
         transform: scale(1);
     }
 }
+
+/* Home Page Slide-Out Animation */
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Product Page Slide-In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide out the home page */
+.slide-out {
+    animation: slideOut 1s ease forwards;
+}
+
+/* Slide in the product page */
+#product-page {
+    animation: slideIn 1s ease forwards;
+}
+
+/* Add media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .logo{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.trusted-section {
+    padding: 0;
+}
+
+h3, h2, h1{
+    margin: 0;
+}
+
+}
+
