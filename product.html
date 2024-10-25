@@ -4,90 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUQA - Product</title>
+    <title>Product Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <div class="logo">
-                <img src="logo.png" alt="Luqa Logo">
+    <!-- Navbar Section -->
+<header>
+    <div class="navbar">
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="logo">
+            <img src="assets/logo.png">
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html" class="active">Product</a></li>
-                    <li><a href="#">Pricing Plans</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="login">Log In</a></li>
-                    <li><a href="#" class="get-started">Get Started</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing Plans</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="login">Log In</a></li>
+                <li><a href="#" class="get-started">Get Started</a></li>
                 </ul>
             </nav>
-        </div>
+    </div>
     </header>
+<section class="product-hero-section">
 
-    <main id="product-page">
-        <section class="product-section">
-            <h2>Our CRM Product</h2>
-            <div class="product-details">
-                <p>Luqa CRM is a robust platform designed to streamline customer relationship management with
-                    cutting-edge tools and an intuitive interface.</p>
-                <h3>Key Features:</h3>
-                <ul class="product-features">
-                    <li>Lead Management - Organize and track leads efficiently.</li>
-                    <li>Sales Analytics - Get actionable insights from your sales data.</li>
-                    <li>Automation Tools - Automate repetitive tasks and workflows.</li>
-                    <li>Customizable Dashboards - Tailor the interface to your specific needs.</li>
-                    <li>Advanced Reporting - Generate comprehensive reports in just a few clicks.</li>
-                </ul>
+<!-- Hero Section -->
+<div class="hero-product">
+    <div class="product-hero-text">
+        <h1 class=""><span>Simplify Sales</span><br><span class="green-head-product">Grow Smarter </span></h1>
+        <div>
+            <p>Close is the easy-to-use CRM built for the way small businesses<br> actually sell: fast, automated, and
+                focused
+                on customer
+                relationships.
+            </p>
+        </div>
+        <div class="try-button-block">
+            <div class="hr-container">
+                <hr class="horizontal-line">
             </div>
-        </section>
-    </main>
+            <button class="try-button">Try it for Free</button>
+        </div>
+    </div>
+    <div class="product-hero-image-container">
+        <img src="assets/luqa-product.png">
+    </div>
+</div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>Luqa</h2>
-                <p>Communicate. Collaborate. Create.</p>
-            </div>
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <p>500 Terry Francine Street, San Francisco, CA 94158</p>
-                <p>General Inquiries: 123-456-7890</p>
-                <p>Email: <a href="mailto:info@luqa.com">info@luqa.com</a></p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-follow">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><img src="fb.png" alt="Facebook" class="social-icon"></a>
-                    <a href="#"><img src="linkdin.png" alt="LinkedIn" class="social-icon"></a>
-                    <a href="#"><img src="youtube.png" alt="YouTube" class="social-icon"></a>
+<!-- Product Preview Section -->
+<div class="product-preview">
+    <div class="container">
+        <img src="assets/dashboard.png" alt="Dashboard Mockup" id="dashboard-image">
+    </div>
+</div>
+</section>
+<section class="product-content">
+    <img src="assets/visualise.png" class="visualise-image">
+
+    <div class="product-section-head">
+        <h1>
+            Why small businesses love Luqa
+        </h1>
+        <h2>Yes,love</h2>
+        <hr>
+    </div>
+    
+    <section>
+    
+        <section class="charts-section">
+            <!-- Lead Status Overview -->
+            <div class="pie-chart-section-wrapper">
+    
+                <div class="pie-chart-details">
+                    <h2>Visualize Your Sales Data with Powerful Charts</h2>
+                    <p>
+                        Gain a clear picture of your business performance with our dynamic visual tools. Track your
+                        sales
+                        status
+                        effortlessly
+                        through an intuitive pie chart, analyze sales performance trends with a detailed bar chart, and
+                        monitor
+                        your revenue
+                        growth using an insightful line chart. These visualizations provide actionable insights that
+                        help
+                        you
+                        make data-driven
+                        decisions, optimize your sales strategy, and drive sustained growth.
+    
+                        This paragraph integrates the key features, giving your website visitors a sense of how the
+                        charts
+                        enhance their ability
+                        to manage and grow their business.
+                    </p>
+                </div>
+    
+                <div class="pie-chart-image-wrapper">
+                    <img src="assets/pie-chart.png" alt="Pie Chart" class="pie-chart-image">
+                    <img src="assets/revenue-trend.png" alt="Line Chart" class="revenue-image">
+    
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 by Luqa. Powered and secured by <a href="https://www.luqa.com">Luqa</a></p>
-        </div>
-    </footer>
+    
+            <div class="pie-chart-section-wrapper" style="margin-top: 70px;">
+                <div class="pie-chart-image-wrapper">
+                    <img src="assets/lead-profile.png" alt="Pie Chart" class="pie-chart-image">
+                    <img src="assets/revenue-trend.png" alt="Line Chart" class="revenue-image">
+    
+                </div>
+                <div class="pie-chart-details">
+                    <h2>Visualize Your Sales Data with Powerful Charts</h2>
+                    <p>
+                        Gain a clear picture of your business performance with our dynamic visual tools. Track your
+                        sales
+                        status
+                        effortlessly
+                        through an intuitive pie chart, analyze sales performance trends with a detailed bar chart, and
+                        monitor
+                        your revenue
+                        growth using an insightful line chart. These visualizations provide actionable insights that
+                        help
+                        you
+                        make data-driven
+                        decisions, optimize your sales strategy, and drive sustained growth.
+                        This paragraph integrates the key features, giving your website visitors a sense of how the
+                        charts
+                        enhance their ability
+                        to manage and grow their business.
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="feature">
+                                                                                                                                                <div class="feature-image-wrapper">
+                                                                                                                                                    <img src="assets/revenue-trend.png" alt="Line Chart" class="feature-image">
+                                                                                                                                                </div>
+                                                                                                                                                <div class="feature-details">
+                                                                                                                                                    <h2 class="feature-title">Revenue Trend</h2>
+                                                                                                                                                    <p class="feature-description">
+                                                                                                                                                        Analyze your revenue growth with a detailed line chart showing trends over different time
+                                                                                                                                                        periods.
+                                                                                                                                                    </p>
+                                                                                                                                                    <ul class="feature-points">
+                                                                                                                                                        <li>Monitor revenue on a daily, monthly, or yearly basis</li>
+                                                                                                                                                        <li>Spot seasonal fluctuations</li>
+                                                                                                                                                        <li>Use data-driven insights to adjust strategy</li>
+                                                                                                                                                    </ul>
+                                                                                                                                                </div>
+                                                                                                                                            </div> -->
+            <!-- Sales Performance -->
+            <!-- <div class="feature">
+                                                                                                                                                <div class="feature-image-wrapper">
+                                                                                                                                                    <img src="assets/bar-chart.png" alt="Bar Chart" class="feature-image">
+                                                                                                                                                </div>
+                            <div class="feature-details">
+                                <h2 class="feature-title">Sales Performance</h2>
+                                <p class="feature-description">
+                                    Compare the performance of your sales team using this bar chart that highlights key sales metrics.
+                                </p>
+                                <ul class="feature-points">
+                                    <li>Track individual and team performance</li>
+                                    <li>Analyze conversion rates and sales volume</li>
+                                    <li>Set performance benchmarks to drive results</li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        </section>
+                        
+                        </section>
+                        <section>
+                            <div class="pricing-container">
+                                <div class="pricing-card">
+                                    <h3>STARTING FROM</h3>
+                                    <h1>$19.99/mo</h1>
+                <ul>
+                <li>5 Users</li>
+                <li>All UI components</li>
+                <li>Lifetime access</li>
+                <li>Free updates</li>
+                <li>Use on 1 project</li>
+                <li>4 Months support</li>
+                </ul>
+            <button>Purchase Now</button>
+            </div>
+            <div class="pricing-card popular">
+                <div class="popular-badge">POPULAR</div>
+                <h3>STARTING FROM</h3>
+                <h1>$30.99/mo</h1>
+                <ul>
+                    <li>5 Users</li>
+                    <li>All UI components</li>
+                    <li>Lifetime access</li>
+                    <li>Free updates</li>
+                    <li>Use on 1 project</li>
+                    <li>4 Months support</li>
+                </ul>
+                <button>Purchase Now</button>
+            </div>
+            <div class="pricing-card">
+                <h3>STARTING FROM</h3>
+                <h1>$70.99/mo</h1>
+                <ul>
+                    <li>5 Users</li>
+                    <li>All UI components</li>
+                    <li>Lifetime access</li>
+                    <li>Free updates</li>
+                    <li>Use on 1 project</li>
+                    <li>4 Months support</li>
+                </ul>
+                <button>Purchase Now</button>
+            </div>
+            </div>
+</section>
+</section>
+
 </body>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const productPage = document.getElementById('product-page');
-        productPage.style.animation = 'slideIn 1s ease forwards';
-    });
-</script>
 
 </html>
