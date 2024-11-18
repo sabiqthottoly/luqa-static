@@ -17,7 +17,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -93,7 +93,7 @@ nav ul li a.get-started {
     border-radius: 5px;
 }
 
-.hero {
+.hero,.hero-product {
     text-align: center;
     padding: 50px 0px;
     display: flex;
@@ -106,6 +106,12 @@ nav ul li a.get-started {
     justify-content: center;
 }
 
+.hero-product{
+    padding: 0;
+    height: 40vh;
+
+}
+
 .hero-text{
     display: flex;
     flex-direction: column;
@@ -116,7 +122,8 @@ nav ul li a.get-started {
     transform: translateY(-10%);
     transform: translateX(-10%);
     z-index: 1;
-    transition: transform 0.4s ease-out; /
+    transition: transform 0.4s ease-out; 
+
 }
 
 
@@ -278,7 +285,7 @@ nav ul li a.get-started {
     margin-bottom: 20px;
 }
 
-.creatives-section p, span {
+.creatives-section p {
     font-size: 1.1em;
     margin: 0;
     margin-left: 12px;
@@ -307,11 +314,16 @@ nav ul li a.get-started {
     width: 50px;
     height: 50px;
 }
-
+#hero-image{
+    width: 40rem;
+    height: 40rem;
+}
 .hero-image{
+    
+    /* width: auto; */
     position: absolute;
-    top: 30%;
-    right: 10%;
+    top: 40%;
+    right: 4%;
     transform: translateY(-28%);
     z-index: 1;
     transition: transform 0.4s ease-out; /* Smooth transition */
@@ -668,11 +680,6 @@ footer {
     animation: slideOut 1s ease forwards;
 }
 
-/* Slide in the product page */
-#product-page {
-    animation: slideIn 1s ease forwards;
-}
-
 /* Add media queries for responsive adjustments */
 @media (max-width: 768px) {
     .logo{
@@ -710,5 +717,443 @@ h3, h2, h1{
     margin: 0;
 }
 
+}
+
+
+/* <---product page css --> */
+
+.product-hero-section {
+    background: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    padding-bottom: 0;
+    /* margin-top: 4rem; */
+    height: calc(100vh - 90px);
+    /* background: linear-gradient(to bottom, white, rgb(200, 232, 202)); */
+
+
+}
+
+.hero-product {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+.product-hero-text{
+    animation: slideInLeft 1s ease forwards; /* Slide-in animation from the left */
+
+}
+.product-hero-image-container img{
+
+    animation: slideInRight  1s ease forwards; /* Slide-in animation from the left */
+}
+
+#dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: slideInTop 1s ease forwards; /* Slide-in animation from the right */
+}
+
+.product-preview {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-hero-text {
+    color: var(--luqa-gray);
+    font-size: 1rem;
+}
+
+.green-head-product{
+    color: var(--luqa-green-dark);
+}
+
+.product-hero-text h1 {
+    margin-bottom: 0;
+        text-align: left;
+    font-size: 68px;
+    line-height: 74px;
+        color: #514f4f;
+
+
+}
+
+.product-hero-text p {
+    color: rgb(152, 152, 152);
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: left;
+
+}
+.product-content{
+    padding: 5rem;
+    position: relative;
+}
+.visualise-image{
+    position: absolute;
+    opacity: .1;
+    /* width: 100vw; */
+}
+.product-section-head h1{
+    color: var(--luqa-gray);
+     font-size: 40px;
+     margin: 0;
+     font-weight: 700;
+}
+.product-section-head h2{
+    color: var(--luqa-green);
+    margin:8px 0px;
+     font-size: 2rem;
+
+}
+.chart-section{
+    display: flex;
+    flex: 1 2;
+    
+}
+.chart-image{
+    width: 50%;
+}
+.chart-image img{
+    width: 50%;
+}
+
+.diagonal-split {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+}
+
+.left-side, .right-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side {
+    background-color: var(--luqa-gray); /* Left side color */
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%); /* Creates a diagonal split */
+}
+
+.right-side {
+    background-color: var(--luqa-green-muted); /* Right side color */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%); /* Creates the opposite diagonal split */
+}
+
+
+@media (min-width: 768px) {
+    .hero-product{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15%;
+    }
+    .product-hero-section {
+        /* justify-content: space-between; */
+        /* padding: 4rem 2rem; */
+        height: calc(100vh - 90px);
+    }
+
+    .product-hero-text {
+        padding-left: 6rem;
+        font-size: 1rem;
+        margin-top: 2rem ;
+        margin-bottom: 2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product-hero-text h1 {
+        margin: 0;
+        line-height: 4rem;
+    }
+
+    .product-hero-text p {
+        font-size: 1.25rem;
+    }
+
+    #dashboard-image {
+        max-height: 17rem;
+    }
+}
+
+/* Slide-in animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background-color: white;
+    border: 2px solid var(--luqa-gray-light);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    font-size: 1rem;
+    color: var(--luqa-gray);
+    margin-bottom: 10px;
+}
+
+.pricing-card h1 {
+    font-size: 2rem;
+    color: var(--luqa-blue); /* Black color for the price */
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: var(--luqa-gray);
+}
+
+.pricing-card button {
+    background-color: var(--luqa-green);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color: var(--luqa-green-dark);
+}
+
+/* Gradient background for the center card */
+.popular {
+background: linear-gradient(
+        52deg, 
+        var(--luqa-green-dewy) 90%, /* Green takes up 70% of the gradient */
+        #c1d2ac 10% /* Light green starts at 70% and takes up 30% */
+    );    color: white;
+    border: none;
+    transform: scale(1.1);
+    /* box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);  */
+}
+
+.popular h1, .popular ul > li {
+    color: white;
+}
+
+.popular-badge {
+    background-color: white;
+    color: var(--luqa-green-dark);
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.pie-chart-section-wrapper{
+    display: flex;
+    flex: 1 1;
+    
+    
+}
+
+.pie-chart-image-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+.pie-chart-image,.revenue-image{
+    width: 65%;
+    height: 65%;
+    border-radius: 10px;
+  box-shadow: -5px 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.revenue-image{
+position: absolute;
+top: 9rem;
+left: 14rem;
+  box-shadow: -20px 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+/* General styling for the pie chart details */
+.pie-chart-details {
+    text-align: left;
+    padding: 2rem;
+    border-radius: 10px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--luqa-gray);
+    display: flex;
+    flex: 1 2;
+    
+}
+
+.pie-chart-details p, .pie-chart-details h1{
+/* color: var(--luqa-gray); */
+    color: #666;
+}
+
+.pie-chart-details p{
+font-size: 16px !important;
+}
+.pie-chart-image-wrapper{
+    padding: 1rem;
+    position: relative;
+}
+.pie-chart-section-wrapper p{
+    font-size: larger;
+}
+.pie-chart-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.pie-chart-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling for the list points */
+.pie-chart-points {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pie-chart-points li {
+    position: relative;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+    animation-delay: calc(0.1s * var(--i)); /* Delay based on the index of the list */
+}
+
+/* Adding icons to list items */
+.pie-chart-points li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #4CAF50;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adding hover effects to the list items */
+.pie-chart-points li:hover i {
+    transform: scale(1.2);
+    color: #34a853; /* Change icon color on hover */
+}
+
+.product-hero-image-container{
+    position: relative;
+}
+.product-hero-image-container img{
+height: 25rem;
+    position: absolute;
+    top: -13rem;
+    left: -1rem;
+}
+
+/* Styling for the button */
+.try-button {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    width: 40%;
+    cursor: pointer;
+}
+
+/* Flex container */
+.try-button-block {
+    display: flex;
+    flex-direction: row; /* Stack the button and hr vertically */
+    align-items: center;
+    gap: 6px;
+}
+
+/* Horizontal Line */
+.hr-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-line {
+ border: none;
+  height: 1.5px;
+  background-color: var(--luqa-green); /* Use any color you like */
+  width: 100%;   
+   border: none;
+    border-top: 2px solid #ccc;
 }
 
